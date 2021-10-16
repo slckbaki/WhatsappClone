@@ -6,11 +6,55 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct AuthView: View {
+    
+    @State var userEmail = ""
+    @State var userPassword = ""
+    @State var userName = ""
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            Spacer()
+            VStack{
+                TextField("Username", text: $userName)
+                    .padding()
+                TextField("User E-mail", text: $userEmail)
+                    .padding()
+                TextField("Password", text: $userPassword)
+                    .padding()
+
+            }
+            Spacer()
+
+                
+            
+            
+            HStack{
+                Button(action: {
+                    
+                }, label: {
+                    Text("Sign In")
+                }).padding(40)
+                .foregroundColor(.white)
+                .background(Color.red)
+                .clipShape(Circle())
+                
+                Spacer(minLength: 50)
+                
+                Button(action: {
+                    
+                }, label: {
+                    Text("Sign Up")
+                }).padding(40)
+                .foregroundColor(.white)
+                .background(Color.red)
+                .clipShape(Circle())
+
+            }
+            Spacer()
+        }
     }
 }
 
