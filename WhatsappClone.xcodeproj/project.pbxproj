@@ -17,6 +17,7 @@
 		A19C0EBA272623B50043D02B /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C0EB9272623B50043D02B /* TestView.swift */; };
 		A19C0EBC272629360043D02B /* UserModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C0EBB272629360043D02B /* UserModal.swift */; };
 		A19C0EBE272629CC0043D02B /* UserStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C0EBD272629CC0043D02B /* UserStore.swift */; };
+		A1A7BC3D2728E420003EFBEC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A7BC3C2728E420003EFBEC /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A19C0EB9272623B50043D02B /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 		A19C0EBB272629360043D02B /* UserModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModal.swift; sourceTree = "<group>"; };
 		A19C0EBD272629CC0043D02B /* UserStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStore.swift; sourceTree = "<group>"; };
+		A1A7BC3C2728E420003EFBEC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		A3ADFEB2AA1D9104316C8344 /* Pods-WhatsappClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhatsappClone.release.xcconfig"; path = "Target Support Files/Pods-WhatsappClone/Pods-WhatsappClone.release.xcconfig"; sourceTree = "<group>"; };
 		D0F726FBD8F6CBEFC867DB82 /* Pods_WhatsappClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhatsappClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			children = (
 				A102EC3D271A520E0036957B /* WhatsappCloneApp.swift */,
 				A102EC3F271A520E0036957B /* AuthView.swift */,
+				A1A7BC3C2728E420003EFBEC /* ChatView.swift */,
 				A19C0EBB272629360043D02B /* UserModal.swift */,
 				A19C0EBD272629CC0043D02B /* UserStore.swift */,
 				A19C0EB9272623B50043D02B /* TestView.swift */,
@@ -226,6 +229,7 @@
 				A19C0EBA272623B50043D02B /* TestView.swift in Sources */,
 				A19C0EBC272629360043D02B /* UserModal.swift in Sources */,
 				A102EC4F271A5DA20036957B /* AppDelegate.swift in Sources */,
+				A1A7BC3D2728E420003EFBEC /* ChatView.swift in Sources */,
 				A102EC40271A520E0036957B /* AuthView.swift in Sources */,
 				A102EC3E271A520E0036957B /* WhatsappCloneApp.swift in Sources */,
 			);

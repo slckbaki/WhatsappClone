@@ -7,45 +7,38 @@
 
 import SwiftUI
 
-struct TestView: View {
-    
-    @State var x = true
-    
-    
+struct SecondNavView: View {
+    let item: String
+
     var body: some View {
-        
-        
-        
-       if x  {
-        VStack{
-            Text("Hello SwiftUI!")
-            Button(action: {
-                x = false
-            }, label: {
-                Text("Change the text")
-            })
-
+        ZStack {
+            Color.red
+            Text(item)
         }
-       } else {
-        
-        VStack{
-            Text("Hello World")
-            Button(action: {
-                x = true
-            }, label: {
-                Text("Change the text")
-            })
+        .navigationBarTitle("asdasdasd")
+    }
+}
+
+struct FirstNavView: View {
+    let listItems = ["One", "Two", "Three"]
+
+    var body: some View {
+        NavigationView {
+            List(listItems, id: \.self) { item in
+                NavigationLink(destination: SecondNavView(item: item)) {
+                    Text(item).font(.headline)
+                }
+            }
+            .navigationBarTitle("sdasdasada")
+            .navigationBarHidden(true)
+            .navigationBarBackButtonHidden(true)
         }
-
-
-       }
-        
-        
     }
 }
 
 struct TestView_Previews: PreviewProvider {
     static var previews: some View {
-        TestView()
+        SecondNavView(item: "Selcuk")
+        FirstNavView()
     }
 }

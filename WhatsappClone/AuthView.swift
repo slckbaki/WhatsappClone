@@ -83,21 +83,38 @@ struct AuthView: View {
                     }
                     Spacer()
                 }
+                .navigationBarHidden(true)
+                .navigationBarBackButtonHidden(true)
                 //AUTHVIEW ENDS
             } else {
                 
                 // User View
                 NavigationView {
                     List(userStore.userArray) { user in
-                        HStack {
-                            Text(user.name)
-                            
-                        }
+
+                        NavigationLink(
+                            destination: ChatView(userToChat: user),
+                            label: {
+                                Text(user.name)
+                            })
                     }
-                }
+                }.navigationBarTitle(Text("Chat with users"))
+                .navigationBarItems(leading: Button(action: {
+                    do {
+                        try Auth.auth().signOut()
+                    } catch {
+                    
+                    }
+                    showAuthView = true
+                    userName = ""
+                    userEmail = ""
+                    userPassword = ""
+                }, label: {
+                    Text("Log Out")
+                }))
             }
+        }
     }
-}
 }
 
 struct ContentView_Previews: PreviewProvider {
